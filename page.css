@@ -1,0 +1,34 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Montserrat-Medium.ttf);
+}
+
+body {
+    background: linear-gradient(-45deg,#D00D2D,#002E6D);
+    background-size: 400% 400%;
+    width:100%;
+    height: 100vh;
+    overflow-x: hidden;
+    animation: moveColors 20s ease infinite alternate;
+    font-family: myFirstFont;
+}
+
+@keyframes moveColors {
+    0%,10% {background-position: 0%;}
+    100% {background-position: 100%;}
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+#container {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 2%;
+}
