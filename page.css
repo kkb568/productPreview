@@ -88,4 +88,8 @@ img {
     .column {
       width: 100%;
     }
+
+    #container button {
+        font-size:larger;
+    }
 }
