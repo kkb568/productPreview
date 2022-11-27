@@ -37,11 +37,11 @@ img {
     transition-delay: 0.4s;
 }
 
-#container {
+#container1 {
     opacity: 1;
 }
 
-#container button {
+#container1 button {
     background-color: white;
     border-color: 5px solid rgb(0, 0, 0);
     padding: 1.5%;
@@ -51,13 +51,13 @@ img {
     transition-duration: 0.4s;
 }
 
-#container button:hover {
+#container1 button:hover, #back:hover {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
 }
 
-#container button:active {
+#container1 button:active, #back:active {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
@@ -88,9 +88,22 @@ img {
     padding: 10px;
 }
 
-#container1 {
+#container2 {
     opacity: 0;
     z-index: -1;
+}
+
+#container2 p {
+    text-align:center;
+}
+
+#back {
+    background-color: white;
+    border-color: 5px solid rgb(0, 0, 0);
+    padding: 1.5%;
+    border-radius: 5px;
+    font-size:medium;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
