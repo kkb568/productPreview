@@ -91,7 +91,8 @@ img {
     padding: 10px;
 }
 
-#container2, #container3, #container4, #container5 {
+#container2, #container3, #container4, #container5,
+#container6 {
     opacity: 0;
     z-index: -1;
 }
@@ -110,7 +111,7 @@ img {
 }
 
 #container3 p, #container3 li, #container4 p, #container4 li, 
-#container5 p {
+#container5 p, #container6 p {
     text-align: justify;
 }
 
