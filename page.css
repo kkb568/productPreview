@@ -54,13 +54,15 @@ img {
     transition-duration: 0.4s;
 }
 
-#container1 button:hover, #back:hover, #modalBtn:hover {
+#container1 button:hover, #back:hover, #modalBtn:hover,
+#relationship:hover {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
 }
 
-#container1 button:active, #back:active, #modalBtn:active {
+#container1 button:active, #back:active, #modalBtn:active,
+#relationship:active {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
@@ -92,7 +94,7 @@ img {
 }
 
 #container2, #container3, #container4, #container5,
-#container6 {
+#container6, #container7 {
     opacity: 0;
     z-index: -1;
 }
@@ -101,7 +103,7 @@ img {
     text-align:center;
 }
 
-#back, #modalBtn {
+#back, #modalBtn, #relationship {
     background-color: white;
     border-color: 5px solid rgb(0, 0, 0);
     padding: 1.5%;
@@ -111,7 +113,7 @@ img {
 }
 
 #container3 p, #container3 li, #container4 p, #container4 li, 
-#container5 p, #container6 p {
+#container5 p, #container6 p, #container7 p {
     text-align: justify;
 }
 
