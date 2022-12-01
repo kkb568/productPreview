@@ -46,7 +46,7 @@ img {
 
 #container1 button {
     background-color: white;
-    border-color: 5px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     padding: 1.5%;
     border-radius: 5px;
     font-size:x-large;
@@ -94,7 +94,7 @@ img {
 }
 
 #container2, #container3, #container4, #container5,
-#container6, #container7 {
+#container6, #container7, #container8 {
     opacity: 0;
     z-index: -1;
 }
@@ -105,7 +105,7 @@ img {
 
 #back, #modalBtn, #relationship {
     background-color: white;
-    border-color: 5px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     padding: 1.5%;
     border-radius: 5px;
     font-size:medium;
@@ -113,7 +113,7 @@ img {
 }
 
 #container3 p, #container3 li, #container4 p, #container4 li, 
-#container5 p, #container6 p, #container7 p {
+#container5 p, #container6 p, #container7 p, #container8 p {
     text-align: justify;
 }
 
