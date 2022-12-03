@@ -26,8 +26,8 @@
                 <button onclick="moveElement('container1','container8')">Sick <span>&#129298;</span></button><br><br>
                 <button onclick="moveElement('container1','container2')">Lonely <span>&#128532;</span></button><br><br>
                 <button onclick="moveElement('container1','container2')">Self judgement <span>&#129488;</span></button><br><br>
-                <button>Happy <span>&#128515;</span></button><br><br>
-                <button>At peace/content <span>&#128524;</span></button>
+                <button onclick="moveElement('container1','container9')">Happy <span>&#128515;</span></button><br><br>
+                <button onclick="moveElement('container1','container10')">At peace/content <span>&#128524;</span></button>
             </div>
         </div>
     </div>
@@ -59,61 +59,11 @@
     </div>
     <div class="container" id="container4">
         <button id="back" onclick="moveElement('container4','container1')">Back</button>
-        <p>You can try out the following activities:-</p>
-        <ul>
-            <li>Walk around.</li>
-            <li>Pause and breath.</li>
-            <li>Take a nap.</li>
-            <li>Check out <a href="https://www.youtube.com/@Taiflow">this</a> Youtube channel dedicated to teaching the practice of Tai Chi. 
-                It is believed that the purpose of most Taoist Chi Gung is to make your body as relaxed, loose and full of energy as you were as a child. 
-                When you feel drained, this is an excellent low impact way of gaining energy while also staying aware of areas where you hold tension and diffusing them. </li>
-        </ul>
-        <p>Alternatively, click on the button below to listen to audio playlist to relax yourself.</p>
-        <button id="modalBtn" onclick="openModal('myModal','content')">View playlist</button>
-        <div id="myModal" class="modal"></div>
-        <div class="modal-content" id="content">
-            <span class="close" onclick="closeModal('myModal','content')">&times;</span>
-            <h4>Mellow music</h4>
-            <audio title="Mellow music" controls>
-                <source src="audios/Mellow Music Background Royalty Free Download MP3.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Lofi in the bank</h4>
-            <audio title="Lofi in the bank" controls>
-                <source src="audios/lofi-in-the-bank-115135.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Midnight</h4>
-            <audio title="Midnight" controls>
-                <source src="audios/midnight-123895.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Relaxed walk</h4>
-            <audio title="Relaxed walk" controls>
-                <source src="audios/relaxed-walk-113607.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Lofi chill beat</h4>
-            <audio title="Lofi chill beat" controls>
-                <source src="audios/lofi-chill-beat-120562.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Easy</h4>
-            <audio title="Easy soothing" controls>
-                <source src="audios/easy-soothing-mellow-beautiful-cheerful-warm-music-21224.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Awake</h4>
-            <audio title="Awake" controls>
-                <source src="audios/awake-119812.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio><br>
-            <h4>Lofi master</h4>
-            <audio title="Lofi master" controls>
-                <source src="audios/lofi-master-113749.mp3" type="audio/mp3">
-                Your browser does not support the HTML5 audio tag. Consider updating to a newer browser.
-            </audio>
-        </div>
+        <p>Grab some headphones and journey through this guided Mindful Meditation (female voice) - <a href="https://youtu.be/ZToicYcHIOU">Daily calm</a></p>
+        <p>For anyone looking to unwind after a stressful day, this youtube playlist can be a total gem in rest yourself - <a href="https://youtu.be/Hc10febKlX8">Calm down playlist</a></p>
+        <p>Also, check out <a href="https://www.youtube.com/@Taiflow">this</a> Youtube channel dedicated to teaching the practice of Tai Chi. 
+            It is believed that the purpose of most Taoist Chi Gung is to make your body as relaxed, loose and full of energy as you were as a child. 
+            When you feel drained, this is an excellent low impact way of gaining energy while also staying aware of areas where you hold tension and diffusing them.</p>
         <p>For more help, you can read through the following articles:-</p>
         <ul>
             <li><a href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/fatigue#treating-fatigue">Fatigue</a></li>
@@ -159,54 +109,104 @@
     <div class="container" id="container8">
         <button id="back" onclick="moveElement('container8','container1')">Back</button>
         <h3 style="text-align:center">SUMMARY OF MEDICAL INDEX</h3>
-        <p>Below is a list of all the important details you need to know about how to access medical services in both the Rwanda and Mauritius campuses.</p>
-        <h4 style="text-align:center">ALU RWANDA</h3>
-        <p>Medical Aid provider - Britam</p>
-        <p>Emergency line - +250 787 - 414 - 774</p>
-        <p>Breakdown of cover - Access <a href="https://docs.google.com/document/d/1ikXMAyPtR4QeAAu6u9n05eZotu8ROOFt62_TrEhd4ow/edit?usp=sharing">here</a></p>
-        <p>Public hospitals/ clinics near campus</p>
-        <ul>
-            <li><a href="https://hopitalcroixdusud.com/">La Croix Du Sud</a></li>
-            <li><a href="https://kfh.rw/">King Faisal Hospital</a></li>
-            <li><a href="https://bahointernationalhospital.com/index.php">Baho International Hospital</a></li>
-            <li><a href="http://horebumedicalclinic.com/">Horebu Medical Clinic Legacy Clinics</a></li>
-            <li><a href="http://www.legacyclinics.rw/">Legacy Clinics</a></li>
-            <li><a href="http://ubuzimapolyclinic.com/">Hospital Ubuzima Polyclinic</a></li>
-        </ul>
-        <h4 style="text-align:center">ALU MAURITIUS</h3>
-        <p>Medical Aid provider - Jubilee, through CoverAxis as Brokers.</p>
-        <p>Emergency line - +230 5497 6728</p>
-        <p>Breakdown of cover - Access <a href="https://docs.google.com/presentation/d/1oaklXAMZ8OP8zX-z4_fYmeqe89VWMaKR/edit?usp=sharing&ouid=110153419269862340298&rtpof=true&sd=true">here</a>.
-           More detailed information can be found on the <a href="http://hs.jubileeportal.com/login.php">Jubilee Portal</a>. 
-           All members' login details should have been sent to them in an email with the subject "Jubilee Health system - Member Credentials".</p>
-        <p>Public hospital/ clinics near campus - SSRN Public Hospital (+230 209 3400) and Clinique du Nord (+230 247 2532)</p>
+        <p>Click on the buttons below to know about how to access medical services in both the Rwanda and Mauritius campuses.</p>
+        <button id="modalBtn" onclick="openModal('medical','medicalRwanda')">ALU Rwanda</button>
+        <button id="modalBtn" onclick="openModal('medical1','medicalMauritius')">ALU Mauritius</button>
+        <div id="medical" class="modal"></div>
+        <div class="modal-content" id="medicalRwanda">
+            <span class="close" onclick="closeModal('medical','medicalRwanda')">&times;</span>
+            <h4 style="text-align:center">ALU RWANDA</h3>
+            <p>Medical Aid provider - Britam</p>
+            <p>Emergency line - +250 787 - 414 - 774</p>
+            <p>Breakdown of cover - Access <a href="https://docs.google.com/document/d/1ikXMAyPtR4QeAAu6u9n05eZotu8ROOFt62_TrEhd4ow/edit?usp=sharing">here</a></p>
+            <p>Public hospitals/ clinics near campus</p>
+            <ul>
+                <li><a href="https://hopitalcroixdusud.com/">La Croix Du Sud</a></li>
+                <li><a href="https://kfh.rw/">King Faisal Hospital</a></li>
+                <li><a href="https://bahointernationalhospital.com/index.php">Baho International Hospital</a></li>
+                <li><a href="http://horebumedicalclinic.com/">Horebu Medical Clinic Legacy Clinics</a></li>
+                <li><a href="http://www.legacyclinics.rw/">Legacy Clinics</a></li>
+                <li><a href="http://ubuzimapolyclinic.com/">Hospital Ubuzima Polyclinic</a></li>
+            </ul>
+        </div>
+        <div id="medical1" class="modal"></div>
+        <div class="modal-content" id="medicalMauritius">
+            <span class="close" onclick="closeModal('medical1','medicalMauritius')">&times;</span>
+            <h4 style="text-align:center">ALU MAURITIUS</h3>
+            <p>Medical Aid provider - Jubilee, through CoverAxis as Brokers.</p>
+            <p>Emergency line - +230 5497 6728</p>
+            <p>Breakdown of cover - Access <a href="https://docs.google.com/presentation/d/1oaklXAMZ8OP8zX-z4_fYmeqe89VWMaKR/edit?usp=sharing&ouid=110153419269862340298&rtpof=true&sd=true">here</a>.
+               More detailed information can be found on the <a href="http://hs.jubileeportal.com/login.php">Jubilee Portal</a>. 
+               All members' login details should have been sent to them in an email with the subject "Jubilee Health system - Member Credentials".</p>
+            <p>Public hospital/ clinics near campus - SSRN Public Hospital (+230 209 3400) and Clinique du Nord (+230 247 2532)</p>
+        </div>
         <h3 style="text-align:center">HOW TO ACCESS WELLNESS SERVICES?</h3>
         <p>All students can reach out to their wellness counsellors or peer counsellors and wellness interns for assistance. 
            The profiles of the staff members along with their email address can be found on the wellness website. It is also on the website where students can book wellness sessions with the counsellors.
            The website can be accessed <a href="https://wellness.alueducation.com/">here</a>. Students can also directly email ALU wellness through our email address: wellness@alueducation.com</p>
         <h3 style="text-align: center">WHO ARE YOUR WELLNESS INTERNS?</h3>
         <p>Beyond the services that they provide through wellness programming and peer-led wellness conversations, wellness interns are also available to help you with your medical concerns. 
-           You can reach out to them via email for assistance or book office hours with them for times that they will be working from the wellness centres on both campuses. Their details are provided below.</p>
-        <h4 style="text-align:center">ALU RWANDA</h4>
-        <p>Name: ABDUL KARIM SESAY<br>
-            Email address: a.sesay1@alustudent.com<br>
-            Wellness centre working hours:<br>
+           You can reach out to them via email for assistance or book office hours with them for times that they will be working from the wellness centres on both campuses. Click on the buttons below to view their details.</p>
+        <button id="modalBtn" onclick="openModal('intern','internRwanda')">ALU Rwanda</button>
+        <button id="modalBtn" onclick="openModal('intern1','internMauritius')">ALU Mauritius</button>
+        <div id="intern" class="modal"></div>
+        <div class="modal-content" id="internRwanda">
+            <span class="close" onclick="closeModal('intern','internRwanda')">&times;</span>
+            <h4 style="text-align:center">ALU RWANDA</h4>
+            <p>Name: ABDUL KARIM SESAY</p>
+            <p>Email address: a.sesay1@alustudent.com<br>
+            <p>Wellness centre working hours:
             Monday 10am to 12:pm,
             Tuesday 11:30am to 1:30pm,
             Wednesday 11:00am to 1:00pm,
-            Thursday 11:00am to 1:30pm<br>
-            Location of wellness centre: Beneath ALU Staff room  (Leadership center) closer to Etswatini</p>
-        <h4 style="text-align:center">ALU MAURITIUS</h4>
-        <p>Name: Bezawit Shiferaw<br>
-            Email address: b.shiferaw@alustudent.com<br>
-            Wellness centre working hours:<br>
+            Thursday 11:00am to 1:30pm</p>
+            <p>Location of wellness centre: Beneath ALU Staff room  (Leadership center) closer to Etswatini</p>
+        </div>
+        <div id="intern1" class="modal"></div>
+        <div class="modal-content" id="internMauritius">
+            <span class="close" onclick="closeModal('intern1','internMauritius')">&times;</span>
+            <h4 style="text-align:center">ALU MAURITIUS</h4>
+            <p>Name: Bezawit Shiferaw</p>
+            <p>Email address: b.shiferaw@alustudent.com</p>
+            <p>Wellness centre working hours:
             Monday 1:30 to 5:30 pm (4 hrs),
-            Thursday 1:30 to 5:30 (4 hrs)<br>
-            Location of wellness centre:
+            Thursday 1:30 to 5:30 (4 hrs)</p>
+            <p>Location of wellness centre:
             ALU Staff Lounge, outside Steve Biko conference room</p>
-        <h3>FIRST AID EMERGENCY</h3>
+        </div>
+        <h3 style="text-align:center">FIRST AID EMERGENCY</h3>
         <p>Your residential advisors and housing assistants have received training on how to provide first aid services. If you are on campus and you are in need of any such assistance, please contact them. 
            The residences also 1st aid kits that can be used to address some 1st aid emergencies, to access these, you can call on your Head residential advisor or your floor supervisor.</p>
+        <button id="modalBtn" onclick="openModal('RA','headRwanda')">ALU Rwanda Head RA</button>
+        <button id="modalBtn" onclick="openModal('RA1','headMauritius')">ALU Mauritius Head RA</button>
+        <div id="RA" class="modal"></div>
+        <div class="modal-content" id="headRwanda">
+            <span class="close" onclick="closeModal('RA','headRwanda')">&times;</span>
+            <p>Name: Lugerero Runiga Israel</p>
+            <p>Email address: i.runiga@alustudent.com</p>
+            <p>Residence: Mostar Residence</p>
+        </div>
+        <div id="RA1" class="modal"></div>
+        <div class="modal-content" id="headMauritius">
+            <span class="close" onclick="closeModal('RA1','headMauritius')">&times;</span>
+            <p>Name: Yash Chudasama</p>
+            <p>Email address: y.chudasama@alustudent.com</p>
+            <p>Residence: Mapungubwe</p>
+        </div>
+    </div>
+    <div class="container" id="container9">
+        <button id="back" onclick="moveElement('container9','container1')">Back</button>
+        <p>One of our student DJ's, @BlackLeather, is an Amapiano and Afro House DJ and his mixes will definitely compliment your already positive mood. Check them out here -</p>
+        <p><a href="https://linktr.ee/BlackLeather">@BlackLeather</a></p>
+    </div>
+    <div class="container" id="container10">
+        <button id="back" onclick="moveElement('container10','container1')">Back</button>
+        <p>Are you open to doing a gratitude exercise/ activity? 
+            This article has quite the list - <a href="https://positivepsychology.com/gratitude-exercises/">Positive psychology</a></p>
+        <p>You can learn on how to practice gratitude through reading this link - 
+           <a href="https://www.mindful.org/an-introduction-to-mindful-gratitude/">Introduction to mindful gratitude</a></p>
+        <p>Perhaps gratitude is inspiring you to want to give back to your student community, you can do this by volunteering for the wellness team. 
+           Email us - wellness@alueducation.com</p>
     </div>
 </body>
 </html>
