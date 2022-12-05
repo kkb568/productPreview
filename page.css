@@ -55,14 +55,14 @@ img {
 }
 
 #container1 button:hover, #back:hover, #modalBtn:hover,
-#relationship:hover {
+#relationship:hover, #finish:hover, #return:hover {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
 }
 
 #container1 button:active, #back:active, #modalBtn:active,
-#relationship:active {
+#relationship:active, #finish:active, #return:active {
     background: linear-gradient(-45deg,#D00D2D,#002E6D);
     color: white;
     border-color: transparent;
@@ -95,7 +95,7 @@ img {
 
 #container2, #container3, #container4, #container5,
 #container6, #container7, #container8, #container9, 
-#container10 {
+#container10, #container11 {
     opacity: 0;
     z-index: -1;
 }
@@ -104,7 +104,8 @@ img {
     text-align:center;
 }
 
-#back, #modalBtn, #relationship {
+#back, #modalBtn, #relationship,
+#finish, #return {
     background-color: white;
     border: 2px solid rgb(0, 0, 0);
     padding: 1.5%;
@@ -168,7 +169,7 @@ img {
         width: 70%;
     }
 
-    #back, #modalBtn {
+    #back, #modalBtn, #finish, #return {
         padding: 3%;
     }
 

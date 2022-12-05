@@ -36,6 +36,7 @@
         <p>Option 1: Want to talk to a peer about it? Click here</p>
         <p>Option 2: Want to talk to a wellness counsellor about it? Click here</p>
         <p>Option 3: Alternatively, email me through filling the form below</p>
+        <button id="finish" onclick="moveElement('container2','container11')">Done</button>
     </div>
     <div class="container" id="container3">
         <button id="back" onclick="moveElement('container3','container1')">Back</button>
@@ -56,6 +57,7 @@
             <li><a href="https://www.thecut.com/2016/06/10-extremely-precise-words-for-emotions-you-didnt-even-know-you-had.html">10 Extremely Precise Words for Emotions You Didn't Even Know You Had</a></li>
             <li><a href="https://hbr.org/2012/05/do-you-know-what-you-are-feeli.html">Do You Know What You Are Feeling?</a> </li>
         </ul>
+        <button id="finish" onclick="moveElement('container3','container11')">Done</button>
     </div>
     <div class="container" id="container4">
         <button id="back" onclick="moveElement('container4','container1')">Back</button>
@@ -69,6 +71,7 @@
             <li><a href="https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/fatigue#treating-fatigue">Fatigue</a></li>
             <li><a href="https://www.helpguide.org/articles/stress/burnout-prevention-and-recovery.htm">Burnout Prevention and Treatment</a></li>
         </ul>
+        <button id="finish" onclick="moveElement('container4','container11')">Done</button>
     </div>
     <div class="container" id="container5">
         <button id="back" onclick="moveElement('container5','container1')">Back</button>
@@ -81,6 +84,7 @@
             <li><a href="https://www.psychologytoday.com/intl/blog/click-here-happiness/202109/how-start-journaling-practice#:~:text=In%20particular%2C%20writing%20about%20emotional,can%20result%20in%20some%20benefits">How to start a journaling practice</a></li>
             <li><a href="https://www.journalbuddies.com/writing-2/things-to-write-when-bored/">35 Interesting Things to Write When Bored</a></li>
         </ol>
+        <button id="finish" onclick="moveElement('container5','container11')">Done</button>
     </div>
     <div class="container" id="container6">
         <button id="back" onclick="moveElement('container6','container1')">Back</button>
@@ -96,6 +100,7 @@
            The number in Mauritius is 59763254 and for Rwanda 0787 414 774.</p>
         <p>b. If no, find a comfortable sitted position and follow the below Progressive muscle relaxation practice</p>
         <iframe width="100%" height="500" src="https://www.youtube.com/embed/ihO02wUzgkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button id="finish" onclick="moveElement('container6','container11')">Done</button>
     </div>
     <div class="container" id="container7">
         <button id="back" onclick="moveElement('container7','container1')">Back</button>
@@ -105,6 +110,7 @@
         <p>If it's related to relationships, click on the button below to speak with a peer or counsellor about it.</p>
         <button id="relationship" onclick="moveElement('container7','container2')">Click here</button>
         <p>If it's related to career, click on the button below to book a coaching session with the SPD team through <a href="https://opportunitiesboard.my.canva.site/">this</a> link.</p>
+        <button id="finish" onclick="moveElement('container7','container11')">Done</button>
     </div>
     <div class="container" id="container8">
         <button id="back" onclick="moveElement('container8','container1')">Back</button>
@@ -178,7 +184,7 @@
         <p>Your residential advisors and housing assistants have received training on how to provide first aid services. If you are on campus and you are in need of any such assistance, please contact them. 
            The residences also 1st aid kits that can be used to address some 1st aid emergencies, to access these, you can call on your Head residential advisor or your floor supervisor.</p>
         <button id="modalBtn" onclick="openModal('RA','headRwanda')">ALU Rwanda Head RA</button>
-        <button id="modalBtn" onclick="openModal('RA1','headMauritius')">ALU Mauritius Head RA</button>
+        <button id="modalBtn" onclick="openModal('RA1','headMauritius')">ALU Mauritius Head RA</button><br><br>
         <div id="RA" class="modal"></div>
         <div class="modal-content" id="headRwanda">
             <span class="close" onclick="closeModal('RA','headRwanda')">&times;</span>
@@ -193,11 +199,13 @@
             <p>Email address: y.chudasama@alustudent.com</p>
             <p>Residence: Mapungubwe</p>
         </div>
+        <button id="finish" onclick="moveElement('container8','container11')">Done</button>
     </div>
     <div class="container" id="container9">
         <button id="back" onclick="moveElement('container9','container1')">Back</button>
         <p>One of our student DJ's, @BlackLeather, is an Amapiano and Afro House DJ and his mixes will definitely compliment your already positive mood. Check them out here -</p>
         <p><a href="https://linktr.ee/BlackLeather">@BlackLeather</a></p>
+        <button id="finish" onclick="moveElement('container9','container11')">Done</button>
     </div>
     <div class="container" id="container10">
         <button id="back" onclick="moveElement('container10','container1')">Back</button>
@@ -207,6 +215,11 @@
            <a href="https://www.mindful.org/an-introduction-to-mindful-gratitude/">Introduction to mindful gratitude</a></p>
         <p>Perhaps gratitude is inspiring you to want to give back to your student community, you can do this by volunteering for the wellness team. 
            Email us - wellness@alueducation.com</p>
+        <button id="finish" onclick="moveElement('container10','container11')">Done</button>
+    </div>
+    <div class="container" id="container11">
+        <p>Thank you for using this wellness resource. Good job showing up today!</p>
+        <button id="return">Back to wellness website</button>
     </div>
 </body>
 </html>
