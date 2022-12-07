@@ -36,6 +36,15 @@
         <p>Option 1: Want to talk to a peer about it? Click here</p>
         <p>Option 2: Want to talk to a wellness counsellor about it? Click here</p>
         <p>Option 3: Alternatively, email me through filling the form below</p>
+        <form method="post" action="sendEmail.php">
+            <label for="email">Email address: </label>
+            <input type="email" name="email" required><br><br>
+            <label for="subject">Subject: </label>
+            <input type="text" name="subject"><br><br>
+            <label for="message">Message: </label>
+            <textarea name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form><br>
         <button id="finish" onclick="moveElement('container2','container11')">Done</button>
     </div>
     <div class="container" id="container3">
