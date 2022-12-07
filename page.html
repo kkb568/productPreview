@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="page.css" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="page.js"></script>
     <title>Document</title>
 </head>
@@ -38,11 +39,11 @@
         <p>Option 3: Alternatively, email me through filling the form below</p>
         <form method="post" action="sendEmail.php">
             <label for="email">Email address: </label>
-            <input type="email" name="email" required><br><br>
+            <input type="email" name="email" id="email" required><br><br>
             <label for="subject">Subject: </label>
-            <input type="text" name="subject"><br><br>
+            <input type="text" name="subject" id="subject"><br><br>
             <label for="message">Message: </label>
-            <textarea name="message"></textarea><br><br>
+            <textarea name="message" id="message"></textarea><br><br>
             <input type="submit" value="Submit">
         </form><br>
         <button id="finish" onclick="moveElement('container2','container11')">Done</button>

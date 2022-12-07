@@ -1,52 +1,22 @@
 <?php
-if(!isset($_POST['submit']))
-{
-    echo "You need to submit the form.";
-}
-$sender_email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
-$receiver_email = 'briankoome56@gmail.com';
+  $email = htmlspecialchars($_POST['email']);
+  $subject = htmlspecialchars($_POST['subject']);
+  $message = htmlspecialchars($_POST['message']);
 
-if(empty($sender_email))
-{
-    echo "Email is mandatory.";
-    exit;
-}
-
-if(IsInjected($sender_email))
-{
-    echo "Bad email value!";
-    exit;
-}
-
-$to = $receiver_email;
-$headers = "From: $sender_email\n";
-$headers .= "Reply-To: $receiver_email";
-mail($to,$subject,$message,$headers);
-echo "Thank you for filling the form."
-
-// Function to validate against any email injection attempts
-function IsInjected($str)
-{
-  $injections = array('(\n+)',
-              '(\r+)',
-              '(\t+)',
-              '(%0A+)',
-              '(%0D+)',
-              '(%08+)',
-              '(%09+)'
-              );
-  $inject = join('|', $injections);
-  $inject = "/$inject/i";
-  if(preg_match($inject,$str))
-    {
-    return true;
+  if(!empty($email) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $receiver = "briankoome56@gmail.com"; //enter that email address where you want to receive all messages
+      $sender = "From: $email";
+      if(mail($receiver, $subject, $message, $sender)){
+         echo "Your message has been sent";
+      }else{
+         echo "Sorry, failed to send your message!";
+      }
+    }else{
+      echo "Enter a valid email address!";
+    }
+  }else{
+    echo "Email and message field is required!";
   }
-  else
-    {
-    return false;
-  }
-}
 
 ?>
