@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="page.css" rel="stylesheet">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="page.js"></script>
     <title>Document</title>
 </head>
@@ -37,8 +36,20 @@
         <button id="back" onclick="moveElement('container2','container1')">Back</button>
         <p>Option 1: Want to talk to a peer about it? Click here</p>
         <p>Option 2: Want to talk to a wellness counsellor about it? Click here</p>
-        <!-- Subject to questioning (if it's ok to use it if form method doesn't work). -->
-        <p>Option 3: Alternatively, you can email the wellness team through <a href="mailto:wellness@alueducation.com">this</a> link.</p>
+        <p>Option 3: Alternatively, you can email the wellness team through filling the form below.</p>
+        <form method="post" action="https://formsubmit.co/b.koome@alustudent.com">
+            <label for="name">Name: </label><br>
+            <input type="text" name="name" required><br><br>
+            <label for="email">Email address: </label><br>
+            <input type="email" name="email" required><br><br>
+            <label for="subject">Subject: </label><br>
+            <input type="text" name="subject"><br><br>
+            <label for="message">Message: </label><br>
+            <textarea name="message" rows="10"></textarea><br><br>
+            <div id="submitButton">
+                <input type="submit" value="Submit">
+            </div>
+        </form><br>
         <button id="finish" onclick="moveElement('container2','container11')">Done</button>
     </div>
     <div class="container" id="container3">
