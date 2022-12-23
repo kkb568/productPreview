@@ -20,3 +20,7 @@ function closeModal(modal,content) {
     Modal.style.display = 'none';
     Content.style.display = 'none';
 }
+
+function toTop() {
+    window.scrollTo(0,0);
+}
